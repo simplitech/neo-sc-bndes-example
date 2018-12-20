@@ -1,0 +1,185 @@
+﻿{
+    "cases": [
+        {
+            "name": "Mint",
+            "method": "Main",
+            "params": [
+                "mintTokens",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5", "0xea2b832323fb5e69e7359bb559c1dd902da800a5", 100 ]
+            ]
+        },
+        {
+            "name": "Deploy",
+            "method": "Main",
+            "params": [
+                "deploy",
+                [ "" ]
+            ]
+        },
+        {
+            "name": "TransferAmount",
+            "method": "Main",
+            "params": [
+                "transferAmount",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5", "0x4117355e8433a19e34f984a36ccf6368c73513b5", 100 ]
+            ]
+        },
+        {
+            "name": "GetRegularAccount",
+            "method": "Main",
+            "params": [
+                "getRegularAccount",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5" ]
+            ]
+        },
+        {
+            "name": "TransferTransactions",
+            "method": "Main",
+            "params": [
+                "transferTransactions",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5", "0x4117355e8433a19e34f984a36ccf6368c73513b5", 100, "0x5A06A669FD52AE0405B09548C66FEDC7EC7AD8EBD59010009142D64E96B2DBAA" ]
+            ]
+        },
+        {
+            "name": "GetBalance",
+            "method": "Main",
+            "params": [
+                "getBalance",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5" ]
+            ]
+        },
+        {
+            "name": "GetBalance2",
+            "method": "Main",
+            "params": [
+                "getBalance",
+                [ "0x4117355e8433a19e34f984a36ccf6368c73513b5" ]
+            ]
+        },
+        {
+            "name": "GetAccountStatus",
+            "method": "Main",
+            "params": [
+                "getAccountStatus",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5" ]
+            ]
+        },
+        {
+            "name": "RegisterRegularAccount",
+            "method": "Main",
+            "params": [
+                "registerRegularAccount",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5", "publicKey", "signature", 1, "123456789-0", "Ricardo Prado", "ricardo.prado@simpli.com.br", "Remarks" ]
+            ]
+        },
+        {
+            "name": "RegisterRegularAccount2",
+            "method": "Main",
+            "params": [
+                "registerRegularAccount",
+                [ "0x4117355e8433a19e34f984a36ccf6368c73513b5", "publicKey-2", "signature-2", 1, "987654321-0", "Ricardo Meira", "ricardo.prado@simpli.com.br", "Remarks" ]
+            ]
+        },
+        {
+            "name": "ApproveRegularAccount",
+            "method": "Main",
+            "params": [
+                "approveRegularAccount",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5", "0xea2b832323fb5e69e7359bb559c1dd902da800a5" ]
+            ]
+        },
+        {
+            "name": "RegisterMasterAccount",
+            "method": "Main",
+            "params": [
+                "registerMasterAccount",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5", "Simpli Tech", "Rua Teodoro Sampaio 744", "+55 11 3280-5541", "ricardo.prado@simpli.com.br" ]
+            ]
+        },
+        {
+            "name": "RegisterMasterAccount2",
+            "method": "Main",
+            "params": [
+                "registerMasterAccount",
+                [ "0x4117355e8433a19e34f984a36ccf6368c73513b5", "Simpli Holding", "Rua Oscar Freire 2172", "+55 11 3280-5541", "ricardo.prado@simli.com.br", 1 ]
+            ]
+        },
+        {
+            "name": "RemoveMasterAccount",
+            "method": "Main",
+            "params": [
+                "removeMasterAccount",
+                [ "0xea2b832323fb5e69e7359bb559c1dd902da800a5" ]
+            ]
+        },
+        {
+            "name": "MasterAccounts",
+            "method": "Main",
+            "params": [
+                "masterAccounts",
+                [ "" ]
+            ]
+        },
+        {
+            "name": "NEP-5_symbol",
+            "method": "Main",
+            "params": [
+                "symbol",
+                [ 0 ]
+            ]
+        },
+        {
+            "name": "NEP-5_Random",
+            "method": "Main",
+            "params": [
+                "random",
+                [ 0 ]
+            ]
+        },
+        {
+            "name": "NEP-5_name",
+            "method": "Main",
+            "params": [
+                "name",
+                [ 0 ]
+            ]
+        },
+        {
+            "name": "NEP-5_decimals",
+            "method": "Main",
+            "params": [
+                "decimals",
+                [ 0 ]
+            ]
+        },
+        {
+            "name": "NEP-5_totalSupply",
+            "method": "Main",
+            "params": [
+                "totalSupply",
+                [ 0 ]
+            ]
+        }
+    ],
+
+    "sequences": [
+        {
+            "sequenceName": "MasterAccountRegistration_Success",
+            "resetBlockchain": true,
+            "items": [
+                {
+                    "testPrivateKey": "KwxrTNGVC62dZ76PeCMnSPgxJdWVNktdvP9scjdvhwLPB9Nr6yDB",
+                    "testName": "RegisterMasterAccount",
+                    "expectedMessages": [ "Account approved", "Master Account Updated" ],
+                    "unexpectedMessages": [ "Not found" ]
+                },
+                {
+                    "testPrivateKey": "KwxrTNGVC62dZ76PeCMnSPgxJdWVNktdvP9scjdvhwLPB9Nr6yDB",
+                    "testName": "RegisterMasterAccount2",
+                    "expectedMessages": [ "Account approved", "Master Account Updated" ],
+                    "unexpectedMessages": [ "Not found" ]
+                }
+            ]
+        }
+    ]
+}

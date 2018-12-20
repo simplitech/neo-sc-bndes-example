@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpliPay/Dao/GenericDao.cs">
+    <Files>
+      <File FileName="SimpliPay/Process/BankProcess.cs" Line="1" Column="1" />
+      <File FileName="SimpliPay/Helpers/Notifier.cs" Line="1" Column="1" />
+      <File FileName="SimpliPay/Dao/BankDao.cs" Line="1" Column="1" />
+      <File FileName="SimpliPay/Dao/GenericDao.cs" Line="11" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
