@@ -10,3 +10,6 @@ In this project, you can find examples of:
 
 ### Incomplete and untested features
 This is a sample project, and it is not aimed to be used in production environments. Most features work but may present abnormal behaviour (bugs). Use it as a API reference only.
+
+### About the code
+Check `BankProcess.cs` class for better understanding of the application
